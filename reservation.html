@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+    <title>Welcome to Sakura Delights</title>
+    
+    <!--- favicon-->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+ 
+    <!--- google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!--- custom css link--->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body id="top">
+
+  <!--- #TOP BAR --->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+            190 Middle Road Fortune Centre #03-01 Level 3, Singapore 188979            
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Daily : 11.00 am to 10.00 pm</span>
+      </div>
+
+      <a href="tel:+65 1234-5678" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+65 1234-5678</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:booking@sakuradelights.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">booking@sakuradelights.com</span>
+      </a>
+
+    </div>
+  </div>
+
+    <!--- #HEADER --->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.png" width="160" height="50" alt="Sakura Delights - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="home.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">HOME</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="menu.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">MENU</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="reservation.html" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">RESERVATION</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">OUR CHEFS</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">ABOUT US</span>
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+
+      <a href="reservation.html" class="btn btn-secondary">
+        <span class="text text-1">Make Reservation</span>
+        <span class="text text-2" aria-hidden="true">Make Reservation</span>
+      </a>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+  <main>
+    <article>
+
+  <!--- #REVERSATION HEADER--->
+
+  <section class="section testi text-center has-bg-image"
+    style="background-image: url('./assets/images/reservation-bg.png')" aria-label="testimonials">
+    <div class="container">
+
+      <p class="headline-2 testi-text">
+
+        <br><br>
+        <p class="label-2 section-subtitle" id="about-label">Reserve online and Skip the Wait</p>
+        
+        <h2>Your table is ready when you are!</h2>
+      </p>
+
+    </div>
+  </section>
+
+
+  <!--- #RESERVATION --->
+
+  <section class="reservation">
+    <div class="container">
+
+      <div class="form reservation-form bg-black-10">
+
+        <form action="" class="form-left">
+
+          <h2 class="headline-1 text-center">Online Reservation</h2>
+
+          <p class="form-text text-center">
+            Booking request <a href="tel:+65 1234-5678" class="link">+65 1234-5678</a>
+            or fill out the order form
+          </p>
+
+          <div class="input-wrapper">
+            <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field">
+
+            <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field">
+          </div>
+
+          <div class="input-wrapper">
+
+            <div class="icon-wrapper">
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+              <select name="person" class="input-field">
+                <option value="1-person">1 Person</option>
+                <option value="2-person">2 Person</option>
+                <option value="3-person">3 Person</option>
+                <option value="4-person">4 Person</option>
+                <option value="5-person">5 Person</option>
+                <option value="6-person">6 Person</option>
+                <option value="7-person">7 Person</option>
+              </select>
+
+              <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div class="icon-wrapper">
+              <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+              <input type="date" name="reservation-date" class="input-field">
+
+              <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div class="icon-wrapper">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+              <select name="person" class="input-field">
+                <option value="011:00am">11 : 00 am</option>
+                <option value="012:00am">12 : 00 am</option>
+                <option value="01:00pm">01 : 00 pm</option>
+                <option value="02:00pm">02 : 00 pm</option>
+                <option value="03:00pm">03 : 00 pm</option>
+                <option value="04:00pm">04 : 00 pm</option>
+                <option value="05:00pm">05 : 00 pm</option>
+                <option value="06:00pm">06 : 00 pm</option>
+                <option value="07:00pm">07 : 00 pm</option>
+                <option value="08:00pm">08 : 00 pm</option>
+                <option value="09:00pm">09 : 00 pm</option>
+                <option value="10:00pm">10 : 00 pm</option>
+              </select>
+
+              <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+            </div>
+
+          </div>
+
+          <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
+
+          <button type="submit" class="btn btn-secondary">
+            <span class="text text-1">Book A Table</span>
+
+            <span class="text text-2" aria-hidden="true">Book A Table</span>
+          </button>
+
+        </form>
+
+        <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
+
+          <h2 class="headline-1 text-center">Contact Us</h2>
+
+          <p class="contact-label">Booking Request</p>
+
+          <a href="tel:+65 1234-5678" class="body-1 contact-number hover-underline">+65 1234-5678</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Location</p>
+
+          <address class="body-4">
+            190 Middle Road Fortune Centre <br>
+            #03-01 Level 3, Singapore 188979
+          </address>
+
+          <p class="contact-label">Lunch Time</p>
+
+          <p class="body-4">
+            Monday to Sunday <br>
+            11.00 am - 2.30pm
+          </p>
+
+          <p class="contact-label">Dinner Time</p>
+
+          <p class="body-4">
+            Monday to Sunday <br>
+            05.00 pm - 10.00pm
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!--- #FEATURES--->
+
+  <section class="section features text-center" aria-label="features">
+    <div class="container">
+
+      <p class="section-subtitle label-2">More Services</p>
+
+      <h2 class="headline-1 section-title">Special Experiences</h2>
+
+      <ul class="grid-list">
+
+        <li class="feature-item">
+          <div class="feature-card">
+
+            <div class="card-icon">
+              <img src="./assets/images/special-1.png" width="200" height="80" loading="lazy" alt="icon">
+            </div>
+
+            <h3 class="title-2 card-title">Chef's Table</h3>
+
+            <p class="label-1 card-text">Behind-the-scenes dining experience where you get to see the chef prepare your meal.</p>
+
+          </div>
+        </li>
+
+        <li class="feature-item">
+          <div class="feature-card">
+
+            <div class="card-icon">
+              <img src="./assets/images/special-2.png" width="200" height="80" loading="lazy" alt="icon">
+            </div>
+
+            <h3 class="title-2 card-title">Tatami Seating</h3>
+
+            <p class="label-1 card-text">Choose traditional tatami seating areas for an authentic Japanese dining experience.</p>
+
+          </div>
+        </li>
+
+        <li class="feature-item">
+          <div class="feature-card">
+
+            <div class="card-icon">
+              <img src="./assets/images/special-3.png" width="200" height="80" loading="lazy" alt="icon">
+            </div>
+
+            <h3 class="title-2 card-title">Omakase Experience</h3>
+
+            <p class="label-1 card-text">Leave it up to our chefs to create a unique and personalized tasting menu based on ingredients of the day.</p>
+
+          </div>
+        </li>
+
+        <li class="feature-item">
+          <div class="feature-card">
+
+            <div class="card-icon">
+              <img src="./assets/images/special-4.png" width="200" height="80" loading="lazy" alt="icon">
+            </div>
+
+            <h3 class="title-2 card-title">Tea Ceremonies</h3>
+
+            <p class="label-1 card-text">Reserve a private ceremony to learn about matcha preparation and traditional tea cultures.</p>
+
+          </div>
+        </li>
+
+      </ul>
+
+      <img src="./assets/images/shape-9.png" width="208" height="178" loading="lazy" alt="shape"
+        class="shape shape-1">
+
+      <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape"
+        class="shape shape-2">
+
+    </div>
+  </section>
+
+
+<!--- #FOOTER--->
+
+<footer class="footer section has-bg-image text-center"
+style="background-image: url('./assets/images/footer-bg.png')">
+<div class="container">
+
+  <div class="footer-top grid-list">
+
+    <div class="footer-brand has-before has-after">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.png" width="300" height="50" loading="lazy" alt="sakura delights home">
+      </a>
+
+      <address class="body-4">
+        190 Middle Road Fortune Centre #03-01 Level 3, Singapore
+      </address>
+
+      <a href="mailto:booking@sakuradelights.com" class="body-4 contact-link">booking@sakuradelights.com</a>
+
+      <a href="tel:+65 1234-5678" class="body-4 contact-link">Booking Request : +65 1234-56788</a>
+
+      <p class="body-4">
+        Open : Daily 11:00 am - 10:00 pm
+      </p>
+
+      <div class="wrapper">
+        <div class="separator"></div>
+        <div class="separator"></div>
+        <div class="separator"></div>
+      </div>
+
+      <p class="title-1">Get News & Offers</p>
+
+      <p class="label-1">
+        Subscribe us & Get <span class="span">25% Off.</span>
+      </p>
+
+      <form action="" class="input-wrapper">
+        <div class="icon-wrapper">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+          <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
+        </div>
+
+        <button type="submit" class="btn btn-secondary">
+          <span class="text text-1">SUBSCRIBE</span>
+
+          <span class="text text-2" aria-hidden="true">SUBSCRIBE</span>
+        </button>
+      </form>
+
+    </div>
+
+    <ul class="footer-list">
+
+      <li>
+        <a href="#" class="label-2 footer-link hover-underline">HOME</a>
+      </li>
+
+      <li>
+        <a href="menu.html" class="label-2 footer-link hover-underline">MENUS</a>
+      </li>
+
+      <li>
+        <a href="reservation.html" class="label-2 footer-link hover-underline">RESERVATION</a>
+      </li>
+
+      <li>
+        <a href="#about" class="label-2 footer-link hover-underline">ABOUT US</a>
+      </li>
+
+      <li>
+        <a href="#" class="label-2 footer-link hover-underline">OUR CHEFS</a>
+      </li>
+
+    </ul>
+
+    <ul class="footer-list">
+
+      <li>
+        <a href="#" class="label-2 footer-link hover-underline">FACEBOOK</a>
+      </li>
+
+      <li>
+        <a href="#" class="label-2 footer-link hover-underline">INSTAGRAM</a>
+      </li>
+
+      <li>
+        <a href="#" class="label-2 footer-link hover-underline">TWITTER</a>
+      </li>
+
+      <li>
+        <a href="#" class="label-2 footer-link hover-underline">YOUTUBE</a>
+      </li>
+
+      <li>
+        <a href="#" class="label-2 footer-link hover-underline">GOOGLE MAP</a>
+      </li>
+
+    </ul>
+
+  </div>
+
+  <div class="footer-bottom">
+
+    <p class="copyright">
+      &copy; 2023 Sakura Delights. All Rights Reserved | Crafted by <a href="https://github.com/hengyinqi626514/sakuradelights"
+        target="_blank" class="link">Heng Yin Qi & Tea Mi Wen</a>
+    </p>
+
+  </div>
+
+</div>
+</footer>
+
+
+
+
+
+<!-- 
+- #BACK TO TOP
+-->
+
+<a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+<ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+</a>
+
+
+ <!---custom js link --->
+ <script src="./assets/js/script.js"></script>
+
+ <!--- ionicon link --->
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

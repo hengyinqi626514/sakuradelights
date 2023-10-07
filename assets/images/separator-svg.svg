@@ -1,0 +1,15 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 13" width="98" height="13">
+	<title>separator-svg</title>
+	<style>
+		.s0 { fill: #ef7993;stroke: #e3c48e;stroke-miterlimit:10;stroke-width: .7 } 
+		.s1 { fill: #ef7993;stroke: #e3c48e;stroke-miterlimit:10;stroke-width: .8 } 
+		.s2 { fill: #ef7993 } 
+	</style>
+	<path id="Layer" class="s0" d="m35 1.6l4.8 4.8-4.8 4.8-4.8-4.8z"/>
+	<path id="Layer" class="s0" d="m62.1 1.6l4.8 4.8-4.8 4.8-4.8-4.8z"/>
+	<path id="Layer" class="s1" d="m48.6 12.1l-8.8-5.7 8.8-5.8 8.7 5.8z"/>
+	<path id="Layer" class="s1" d="m3.2 6.4h27"/>
+	<path id="Layer" class="s2" d="m2.6 8.9c-1.4 0-2.5-1.1-2.5-2.5 0-1.4 1.1-2.5 2.5-2.5 1.4 0 2.5 1.1 2.5 2.5 0 1.4-1.1 2.5-2.5 2.5z"/>
+	<path id="Layer" class="s1" d="m93.9 6.4h-27"/>
+	<path id="Layer" class="s2" d="m94.4 8.9c-1.4 0-2.5-1.1-2.5-2.5 0-1.4 1.1-2.5 2.5-2.5 1.4 0 2.5 1.1 2.5 2.5 0 1.4-1.1 2.5-2.5 2.5z"/>
+</svg>
