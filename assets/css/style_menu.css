@@ -6,7 +6,7 @@
 /* Style the active menu */
 .menu-list.active {
     display: block;
-    border: 1px (--gold-crayola);
+    border: 1px (--pink);
     padding: 10px;
 }
 
@@ -34,7 +34,7 @@
      * COLORS
      */
   
-    --gold-crayola:#ef7993;
+    --pink:#ef7993;
     --black:#000000;
     --white:#ffffff;
     --dark-grey:#242124;
@@ -212,7 +212,7 @@
  
  ::-webkit-scrollbar-track { background-color: transparent; }
  
- ::-webkit-scrollbar-thumb { background-color: var(--gold-crayola); }
+ ::-webkit-scrollbar-thumb { background-color: var(--pink); }
  
  
  
@@ -286,14 +286,14 @@
  .separator {
    width: 8px;
    height: 8px;
-   border: 1px solid var(--gold-crayola);
+   border: 1px solid var(--pink);
    transform: rotate(45deg);
  }
  
  .contact-label { font-weight: var(--weight-bold); }
  
  .contact-number {
-   color: var(--gold-crayola);
+   color: var(--pink);
    max-width: max-content;
    margin-inline: auto;
  }
@@ -310,7 +310,7 @@
    bottom: 0;
    width: 100%;
    height: 5px;
-   border-block: 1px solid var(--gold-crayola);
+   border-block: 1px solid var(--pink);
    transform: scaleX(0.2);
    opacity: 0;
    transition: var(--transition-2);
@@ -333,7 +333,7 @@
  
  .section-subtitle {
    position: relative;
-   color: var(--gold-crayola);
+   color: var(--pink);
    font-weight: var(--weight-bold);
    text-transform: uppercase;
    letter-spacing: var(--letterSpacing-2);
@@ -351,13 +351,13 @@
  
  .btn {
    position: relative;
-   color: var(--gold-crayola);
+   color: var(--pink);
    font-size: var(--fontSize-label-2);
    font-weight: var(--weight-bold);
    text-transform: uppercase;
    letter-spacing: var(--letterSpacing-5);
    max-width: max-content;
-   border: 2px solid var(--gold-crayola);
+   border: 2px solid var(--pink);
    padding: 12px 45px;
    overflow: hidden;
    z-index: 1;
@@ -372,7 +372,7 @@
    width: 200%;
    height: 200%;
    border-radius: var(--radius-circle);
-   background-color: var(--gold-crayola);
+   background-color: var(--pink);
    transition: var(--transition-2);
    z-index: -1;
  }
@@ -398,7 +398,7 @@
  }
  
  .btn-secondary {
-   background-color: var(--gold-crayola);
+   background-color: var(--pink);
    color: var(--black);
  }
  
@@ -457,7 +457,7 @@
  }
  
  .btn-text {
-   color: var(--gold-crayola);
+   color: var(--pink);
    padding-block-end: 4px;
    margin-inline: auto;
    text-transform: uppercase;
@@ -505,7 +505,7 @@
  
  .input-field::placeholder { color: inherit; }
  
- .input-field:focus { border-color: var(--gold-crayola); }
+ .input-field:focus { border-color: var(--pink); }
  
  .icon-wrapper {
    position: relative;
@@ -546,7 +546,7 @@
    left: 0;
    right: 0;
    bottom: 0;
-   background-color: var(--gold-crayola);
+   background-color: var(--pink);
    z-index: 10;
    display: grid;
    place-content: center;
@@ -705,7 +705,7 @@
  
  .navbar .close-btn ion-icon { --ionicon-stroke-width: 40px; }
  
- .navbar .close-btn:is(:hover, :focus-visible) { color: var(--gold-crayola); }
+ .navbar .close-btn:is(:hover, :focus-visible) { color: var(--pink); }
  
  .navbar .logo {
    max-width: max-content;
@@ -734,7 +734,7 @@
  .navbar-link .span { transition: var(--transition-1); }
  
  .navbar-link:is(:hover, :focus-visible, .active) .span {
-   color: var(--gold-crayola);
+   color: var(--pink);
    transform: translateX(20px);
  }
  
@@ -757,7 +757,7 @@
  
  .sidebar-link { transition: var(--transition-1); }
  
- .sidebar-link:is(:hover, :focus-visible) { color: var(--gold-crayola); }
+ .sidebar-link:is(:hover, :focus-visible) { color: var(--pink); }
  
  .navbar .text-center .separator {
    margin-block: 30px;
@@ -857,7 +857,7 @@
    bottom: 15px;
    right: 15px;
    z-index: 2;
-   background-color: var(--gold-crayola);
+   background-color: var(--pink);
    width: 110px;
    height: 110px;
    padding: 12px;
@@ -879,7 +879,7 @@
  
  .hero-btn::after {
    inset: 0;
-   border: 1px solid var(--gold-crayola);
+   border: 1px solid var(--pink);
    animation: rotate360 15s linear infinite;
  }
  
@@ -1051,7 +1051,7 @@
    color: var(--davys-grey);
  }
  
- .special-dish-content .span { color: var(--gold-crayola); }
+ .special-dish-content .span { color: var(--pink); }
  
  .special-dish .btn { margin-inline: auto; }
  
@@ -1073,7 +1073,7 @@
    gap: 20px;
  }
  
- .hover\:card .card-banner { background-color: var(--gold-crayola); }
+ .hover\:card .card-banner { background-color: var(--pink); }
  
  .hover\:card .card-banner .img-cover { transition: var(--transition-2); }
  
@@ -1089,10 +1089,10 @@
  
  .menu-card .card-title { transition: var(--transition-1); }
  
- .menu-card .card-title:is(:hover, :focus-visible) { color: var(--gold-crayola); }
+ .menu-card .card-title:is(:hover, :focus-visible) { color: var(--pink); }
  
  .menu-card .badge {
-   background-color: var(--gold-crayola);
+   background-color: var(--pink);
    color: var(--black);
    font-family: var(--fontFamily-forum);
    max-width: max-content;
@@ -1103,7 +1103,7 @@
  }
  
  .menu-card .span {
-   color: var(--gold-crayola);
+   color: var(--pink);
    margin-block: 10px;
  }
  
@@ -1114,7 +1114,7 @@
  
  .menu-text .span {
    display: inline-block;
-   color: var(--gold-crayola);
+   color: var(--pink);
  }
  
  .menu .btn {
@@ -1172,7 +1172,7 @@
  }
  
  .testi .profile-name {
-   color: var(--gold-crayola);
+   color: var(--pink);
    font-weight: var(--weight-bold);
    text-transform: uppercase;
    letter-spacing: var(--letterSpacing-3);
@@ -1192,7 +1192,7 @@
  
  .form-text .link {
    display: inline;
-   color: var(--gold-crayola);
+   color: var(--pink);
  }
  
  .form-right .headline-1 { margin-block-end: 40px; }
@@ -1295,7 +1295,7 @@
    top: 30px;
    left: 25px;
    padding: 5px 10px;
-   color: var(--gold-crayola);
+   color: var(--pink);
    background-color: var(--black);
    font-weight: var(--weight-bold);
    letter-spacing: var(--letterSpacing-1);
@@ -1303,7 +1303,7 @@
  }
  
  .event-card .card-subtitle {
-   color: var(--gold-crayola);
+   color: var(--pink);
    text-transform: uppercase;
    font-weight: var(--weight-bold);
    letter-spacing: var(--letterSpacing-2);
@@ -1365,7 +1365,7 @@
    transition: var(--transition-1);
  }
  
- .footer-brand .contact-link:is(:hover, :focus-visible) { color: var(--gold-crayola); }
+ .footer-brand .contact-link:is(:hover, :focus-visible) { color: var(--pink); }
  
  .footer-brand .wrapper {
    display: flex;
@@ -1401,7 +1401,7 @@
    transition: var(--transition-1);
  }
  
- .footer-link:is(:hover, :focus-visible) { color: var(--gold-crayola); }
+ .footer-link:is(:hover, :focus-visible) { color: var(--pink); }
  
  .copyright {
    color: var(--quick-silver);
@@ -1410,7 +1410,7 @@
  
  .copyright .link {
    display: inline;
-   color: var(--gold-crayola);
+   color: var(--pink);
    text-decoration: underline;
  }
  
@@ -1426,7 +1426,7 @@
    position: fixed;
    bottom: 20px;
    right: 20px;
-   background-color: var(--gold-crayola);
+   background-color: var(--pink);
    color: var(--black);
    font-size: 22px;
    width: 50px;
@@ -1443,7 +1443,7 @@
  
  .back-top-btn:is(:hover, :focus-visible) {
    background-color: var(--white);
-   color: var(--gold-crayola);
+   color: var(--pink);
  }
  
  .back-top-btn.active {
@@ -1534,7 +1534,7 @@
  
    .topbar .link { transition: var(--transition-1); }
  
-   .topbar .link:is(:hover, :focus-visible) { color: var(--gold-crayola); }
+   .topbar .link:is(:hover, :focus-visible) { color: var(--pink); }
  
  
  
@@ -1695,9 +1695,9 @@
      display: grid;
      position: absolute;
      z-index: 1;
-     color: var(--gold-crayola);
+     color: var(--pink);
      font-size: 2.4rem;
-     border: 1px solid var(--gold-crayola);
+     border: 1px solid var(--pink);
      width: 45px;
      height: 45px;
      place-items: center;
@@ -1713,7 +1713,7 @@
    .hero .slider-btn.next { right: 30px; }
  
    .hero .slider-btn:is(:hover, :focus-visible) {
-     background-color: var(--gold-crayola);
+     background-color: var(--pink);
      color: var(--black);
    }
  
@@ -2210,7 +2210,7 @@
    color: var(--davys-grey);
  }
  
- .special-dish-content .span { color: var(--gold-crayola); }
+ .special-dish-content .span { color: var(--pink); }
  
  .special-dish .btn { margin-inline: auto; }
 
