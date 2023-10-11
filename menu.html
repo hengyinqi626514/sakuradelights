@@ -2,187 +2,1590 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Menu</title>
-    <style>
-        .menu-list {
-            display: none;
-        }
-        .active {
-            display: block;
-        }
 
-        td img {
-            width: 300px;
-            height: 300px;
-            filter:drop-shadow(5px 5px 3px gray);
-            align-self: center;        
-        }
+    <title>Welcome to Sakura Delights</title>
 
+    <!--- favicon-->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <!--- END OF favicon-->
 
-        thead {
-            font-weight: bold;
-        }
+ 
+    <!--- google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!--- END OF google font link-->
+   
+    <!--- custom css link--->
+    <link rel="stylesheet" href="styles.css">
+    <!--- END OF custom css link--->
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        table, th, td {
-            padding: 8px;
-            /* border: 1px solid black; */
-            table-layout: fixed;
-        }
-
-        /* Apply word-wrap to table cells */
-        table td {
-            word-wrap: break-word;
-        }
-        #wrapper {
-            width: 80%;
-            margin: auto;
-        }
-        
-
-    </style>
 </head>
-<body>
-    <div id="wrapper">
-        <h1>Restaurant Menu</h1>
+
+<body id="top">
+
+    <!--- #TOP BAR --->
+    <div class="topbar">
+        <div class="container">
     
-    <button onclick="showMenu('lunch')">Lunch Menu</button>
-    <button onclick="showMenu('dinner')">Dinner Menu</button>
-    <button onclick="showMenu('drink')">Drink Menu</button>
+          <address class="topbar-item">
+            <div class="icon">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+            </div>
+    
+            <span class="span">
+                190 Middle Road Fortune Centre #03-01 Level 3, Singapore 188979            
+            </span>
+          </address>
+    
+          <div class="separator"></div>
+    
+          <div class="topbar-item item-2">
+            <div class="icon">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+            </div>
+    
+            <span class="span">Daily : 11.00 am to 10.00 pm</span>
+          </div>
+    
+          <a href="tel:+65 1234-5678" class="topbar-item link">
+            <div class="icon">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+            </div>
+    
+            <span class="span">+65 1234-5678</span>
+          </a>
+    
+          <div class="separator"></div>
+    
+          <a href="mailto:booking@sakuradelights.com" class="topbar-item link">
+            <div class="icon">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+            </div>
+    
+            <span class="span">booking@sakuradelights.com</span>
+          </a>
+    
+        </div>
+      </div>
+    <!--- END OF #TOP BAR --->
 
-    <table border="0">
-        <thead>
-            <tr>
-                <th colspan="3" id="lunch-menu" class="menu-list-active"><h2>Lunch Menu</h2></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img src="images/Edamame.jpg" alt="Edamame" ></td>
-                <td><img src="images/Gyoza.jpg" alt="Gyoza"></td>
-                <td><img src="images/Agedashi Tofu.jpg" alt="Agedashi Tofu"></td>
-            </tr>
-            <td>
-                <tr>
-                    <td><table border="0">
-                        <thead>
-                            <tr>
-                                <td>Edamame</td>
-                                <td align="right">$32.00</td></th>
-                            </tr>
-                        </thead>
-                        <tbody><tr><td colspan="2" align="left">Steamed young soybeans, salted</td></tr></tbody>
-                    </table></td>
-                    <td><table border="0">
-                        <thead>
-                            <tr>
-                                <td>Gyoza</td>
-                                <td align="right">$32.00</td></th>
-                            </tr>
-                        </thead>
-                        <tbody><tr><td colspan="2" align="left">Dumplings filled with a choice of pork, chicken, or vegetables</td></tr></tbody>
-                    </table>
-                        
-                    </td>
-                    <td><table border="0">
-                        <thead>
-                            <tr>
-                                <td>Agedashi Tofu</td>
-                                <td align="rightcolumn">$32.00</td></th>
-                            </tr>
-                        </thead>
-                        <tbody><tr><td colspan="2" align="left">Deep-fried tofu cubes served in a savory soy-based sauce</td></tr></tbody>
-                    </table>
-                        
-                    </td>
-                </tr>
-            </td>
-        </tbody>
-    </table>
+    <!--- #HEADER --->
+     <header class="header" data-header>
+    <div class="container">
 
-    <div id="lunch-menu" class="menu-list active">
-        <h2>Lunch Menu</h2>
-        <h3>Appetizers:</h3>
-        <ul>
-            <li>Edamame</li>
-            <li>Gyoza</li>
-            <li>Agedashi Tofu</li>
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.png" width="160" height="50" alt="Sakura Delights - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="home.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">HOME</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="menu.html" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">MENU</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="reservation.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">RESERVATION</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">OUR CHEFS</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">ABOUT US</span>
+            </a>
+          </li>
         </ul>
-        <h3>Main Courses:</h3>
-        <ul>
-            <li>Sushi Platter</li>
-            <li>Teriyaki Chicken</li>
-            <li>Yaki Udon</li>
-        </ul>
-        <h3>Desserts:</h3>
-        <ul>
-            <li>Mochi Ice Cream</li>
-            <li>Matcha Cheesecake</li>
-        </ul>
+
+      </nav>
+
+      <a href="reservation.html" class="btn btn-secondary">
+        <span class="text text-1">Make Reservation</span>
+        <span class="text text-2" aria-hidden="true">Make Reservation</span>
+      </a>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+    </header>
+    <!--- END OF #HEADER --->
+
+    <main>
+        <article>
+
+      <!--- #PROMOTION-->
+
+    <section class="special-dish text-center" aria-labelledby="dish-label">
+
+    <div class="special-dish-banner">
+      <img src="./assets/images/Sakura Delight Menu/promotion-dish-sushi.jpg" width="940" height="900" loading="lazy" alt="special dish"
+        class="img-cover">
     </div>
 
-    <div id="dinner-menu" class="menu-list">
-        <h2>Dinner Menu</h2>
-        <h3>Appetizers:</h3>
-        <ul>
-            <li>Edamame</li>
-            <li>Gyoza</li>
-            <li>Agedashi Tofu</li>
-            <li>Takoyaki</li>
-        </ul>
-        <h3>Main Courses:</h3>
-        <ul>
-            <li>Sushi Platter</li>
-            <li>Sashimi Deluxe</li>
-            <li>Teriyaki Chicken</li>
-            <li>Beef Sukiyaki</li>
-            <li>Yaki Udon</li>
-            <li>Katsu Curry</li>
-        </ul>
-        <h3>Desserts:</h3>
-        <ul>
-            <li>Mochi Ice Cream</li>
-            <li>Matcha Cheesecake</li>
-            <li>Dorayaki</li>
-            <li>Japanese Parfait</li>
-        </ul>
+    <div class="special-dish-content bg-black-10">
+      <div class="container">
+
+        <img src="./assets/images/badge-1.png" width="28" height="41" loading="lazy" alt="badge" class="abs-img">
+
+        <p class="section-subtitle label-2">Promotion</p>
+
+        <h2 class="headline-1 section-title">Sushi Extravaganza</h2>
+
+        <p class="section-text">
+            Calling all sushi aficionados! Dive into the ultimate sushi adventure with Sakura Delight's <strong>"Sushi Extravaganza." </strong><br>For a limited time, relish a sensational sushi platter at an irresistible 20% off
+        <div class="wrapper">
+          <del class="del body-3">apply promo code</del>
+
+          <span class="span title-2"><strong>SUSHIFEAST</strong></span>
+          
+        </div>
+
+        <a href="#" class="btn btn-primary">
+          <span class="text text-1">ORDER NOW</span>
+
+          <span class="text text-2" aria-hidden="true">ORDER NOW</span>
+        </a>
+
+      </div>
     </div>
 
-    <div id="drink-menu" class="menu-list">
-        <h2>Drink Menu</h2>
-        <h3>Green Tea:</h3>
-        <ul>
-            <li>Traditional Japanese green tea</li>
-        </ul>
-        <h3>Alcoholic Beverages:</h3>
-        <ul>
-            <li>Saké - A selection of premium saké</li>
-            <li>Saké Cocktails - Creative saké-based cocktails</li>
-            <li>Japanese Beer - Including Sapporo and Asahi</li>
-        </ul>
-        <h3>Non-Alcoholic Drinks:</h3>
-        <ul>
-            <li>Soft Drinks - Soda and fruit juices</li>
-            <li>Green Tea Latte - Creamy green tea latte</li>
-            <li>Plum Wine - Sweet plum wine</li>
-            <li>Iced Coffee - Chilled Japanese-style coffee</li>
-        </ul>
+    <img src="./assets/images/Sakura Delight Menu/shape-A.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
+
+
+
+    </section>
+          <!--- END OF #PROMOTION--->
+
+
+    <!--- #FEATURES--->
+    
+    <section class="section features text-center" aria-label="features">
+        <div class="container">
+    
+          <p class="section-subtitle label-2">Exquisite Menu, Awaits Your Palate</p>
+        </p>
+    
+        <h4>At Sakura Delight, our skilled chefs craft a symphony of flavors. <br>Each dish, a masterpiece that tantalizes your taste buds, leaving you craving more.</h4>
+    <br> 
+    
+    
+    </p>
+
+
+    <div class="menu-buttons">
+      <div class="table-container">
+        <tr>
+          <td>
+            <a href="#" class="btn btn-secondary"  onclick="showMenu('lunch'); return false;">
+              <span class="text text-1">Lunch Menu</span>
+              <span class="text text-2" aria-hidden="true">Lunch Menu</span>
+          </a>
+          </td>
+          <td>
+            <a href="#" class="btn btn-primary" onclick="showMenu('dinner'); return false;">
+              <span class="text text-1">Dinner Menu</span>
+              <span class="text text-2" aria-hidden="true">Dinner Menu</span>
+          </a>
+          </td>
+          <td>
+            <a href="#" class="btn btn-secondary" onclick="showMenu('drinks'); return false;">
+              <span class="text text-1">Drink Menu</span>
+              <span class="text text-2" aria-hidden="true">Drink Menu</span>
+          </a>
+          </td>
+        </tr>
+      </div>
+  
+
+
+        <!-- Add the "active" class to the lunch menu by default -->
+        <div class="menu-list active" id="lunch-menu">
+          <!-- Lunch menu content here -->   
+            <!--Appertizers-->
+                <h2>Appetizers</h2>
+                <br>
+                <ul class="grid-list">
+            
+                    <!--FOOD 1-->
+                    <li class="feature-item">
+                      <div class="feature-card">
+            
+                        <div class="card-icon">
+                          <img src="./assets/images/Sakura Delight Menu/Edamame.png" width="200" height="80" loading="lazy" alt="icon">
+                        </div>
+            
+                        <p class="label-1 card-text">
+                            <table border="0" align="center">
+                                <tr>
+                                    <td align="left" ><strong>Edamame</strong></td>
+                                    <td align="right"><strong>$4.99</strong></td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2" align="left"><p class="label-1 card-text">Steamed young soybeans, salt
+                                    <br>Allergens: Soy</p> </td>
+                                  </tr>
+                            </table>
+                            
+                        </p>
+            
+                      </div>
+                    </li>
+                    <!--END OF FOOD 1-->
+      
+                    <!--FOOD 2-->
+                    <li class="feature-item">
+                      <div class="feature-card">
+            
+                        <div class="card-icon">
+                          <img src="./assets/images/Sakura Delight Menu/Gyoza.png" width="200" height="80" loading="lazy" alt="icon">
+                        </div>
+            
+            
+                        <p class="label-1 card-text">
+                            <table border="0" align="center">
+                                <tr>
+                                <td align="left" ><strong>Gyoza</strong></td>
+                                <td align="right"><strong>$6.99</strong></td>
+                                </tr>
+                                <tr>
+                                <td colspan="2" align="left"><p class="label-1 card-text">Dumplings (pork, chicken, or vegetables), wrapper, seasoning
+                                  <br>Allergens: Wheat, Soy</p> </td>
+                                </tr>
+                             </table></p>
+            
+                      </div>
+                    </li>
+                    <!--END OF FOOD 2-->
+      
+                    <!--FOOD 3-->
+                    <li class="feature-item">
+                      <div class="feature-card">
+            
+                        <div class="card-icon">
+                          <img src="./assets/images/Sakura Delight Menu/Harumaki.png" width="200" height="80" loading="lazy" alt="icon">
+                        </div>
+            
+                        <p class="label-1 card-text">
+                          <table border="0" align="center">
+                              <tr>
+                              <td align="left" ><strong>Harumaki</strong></td>
+                              <td align="right"><strong>$5.99</strong></td>
+                              </tr>
+                              <tr>
+                              <td colspan="2" align="left"><p class="label-1 card-text">Fresh vegetables, tempura batter, sweet chili dipping sauce
+                                <br>Allergens: Wheat</p> </td>
+                              </tr>
+                           </table></p>
+            
+                      </div>
+                    </li>
+                    <!--END OF FOOD 3-->
+      
+                    <!--FOOD 4-->
+                    <li class="feature-item">
+                      <div class="feature-card">
+            
+                        <div class="card-icon">
+                          <img src="./assets/images/Sakura Delight Menu/Tempura Combo.png" width="200" height="80" loading="lazy" alt="icon">
+                        </div>
+            
+                        <p class="label-1 card-text">
+                          <table border="0" align="center">
+                              <tr>
+                              <td align="left" ><strong>Tempura Combo</strong></td>
+                              <td align="right"><strong>$8.99</strong></td>
+                              </tr>
+                              <tr>
+                              <td colspan="2" align="left"><p class="label-1 card-text"> Battered vegetables (e.g., sweet potato, zucchini, eggplant), prawns, tempura sauce
+                                <br>Allergens: Wheat, Shellfish</p> </td>
+                              </tr>
+                           </table></p>
+                      </div>
+                    </li>
+                    <!--END OF FOOD 4-->
+      
+                </ul>
+            <!--END OF Appertizers-->
+
+            <!--Main Course-->
+                <h2>Main Course</h2>
+                <br>
+                <ul class="grid-list">
+              
+                      <!--FOOD 1-->
+                      <li class="feature-item">
+                        <div class="feature-card">
+              
+                          <div class="card-icon">
+                            <img src="./assets/images/Sakura Delight Menu/Sushi Platter .png" width="200" height="80" loading="lazy" alt="icon">
+                          </div>
+              
+                          <p class="label-1 card-text">
+                              <table border="0" align="center">
+                                  <tr>
+                                      <td align="left" ><strong>Sushi Platter</strong></td>
+                                      <td align="right"><strong>$16.99</strong></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" align="left"><p class="label-1 card-text">Assorted fish and seafood, rice, wasabi, pickled ginger
+                                      <br>Allergens: Fish, Soy</p> </td>
+                                    </tr>
+                              </table>
+                              
+                          </p>
+              
+                        </div>
+                      </li>
+                      <!--END OF FOOD 1-->
+        
+                      <!--FOOD 2-->
+                      <li class="feature-item">
+                        <div class="feature-card">
+              
+                          <div class="card-icon">
+                            <img src="./assets/images/Sakura Delight Menu/Sushi SandwichDeluxe.png" width="200" height="80" loading="lazy" alt="icon">
+                          </div>
+              
+              
+                          <p class="label-1 card-text">
+                              <table border="0" align="center">
+                                  <tr>
+                                  <td align="left" ><strong>Sushi Sandwich</strong></td>
+                                  <td align="right"><strong>$12.99</strong></td>
+                                  </tr>
+                                  <tr>
+                                  <td colspan="2" align="left"><p class="label-1 card-text">Minced tuna, salmon, tempura, spicy mayo, tobiko, rice, nori
+                                    <br>Allergens: Fish, Wheat, Soy</p> </td>
+                                  </tr>
+                               </table></p>
+              
+                        </div>
+                      </li>
+                      <!--END OF FOOD 2-->
+        
+                      <!--FOOD 3-->
+                      <li class="feature-item">
+                        <div class="feature-card">
+              
+                          <div class="card-icon">
+                            <img src="./assets/images/Sakura Delight Menu/Takoyaki.png" width="200" height="80" loading="lazy" alt="icon">
+                          </div>
+              
+                          <p class="label-1 card-text">
+                            <table border="0" align="center">
+                                <tr>
+                                <td align="left" ><strong>Takoyaki</strong></td>
+                                <td align="right"><strong>$7.99</strong></td>
+                                </tr>
+                                <tr>
+                                <td colspan="2" align="left"><p class="label-1 card-text"> Octopus, batter, bonito flakes, takoyaki sauce
+                                  <br>Allergens: Wheat, Soy, Fish</p> </td>
+                                </tr>
+                             </table></p>
+                        </div>
+                      </li>
+                      <!--END OF FOOD 3-->
+        
+                      <!--FOOD 4-->
+                      <li class="feature-item">
+                        <div class="feature-card">
+              
+                          <div class="card-icon">
+                            <img src="./assets/images/Sakura Delight Menu/Classic Bento - Teriyaki Chicken.png" width="200" height="80" loading="lazy" alt="icon">
+                          </div>
+              
+                          <p class="label-1 card-text">
+                            <table border="0" align="center">
+                                <tr>
+                                <td align="left" ><strong>Teriyaki Chicken Bento</strong></td>
+                                <td align="right"><strong>$10.99</strong></td>
+                                </tr>
+                                <tr>
+                                <td colspan="2" align="left"><p class="label-1 card-text">Grilled chicken, teriyaki sauce, rice, vegetables
+                                  <br>Allergens: Soy</p> </td>
+                                </tr>
+                             </table></p>
+              
+                        </div>
+                      </li>
+                      <!--END OF FOOD 4-->                
+      
+                      <!--FOOD 5-->
+                      <li class="feature-item">
+                        <div class="feature-card">
+              
+                          <div class="card-icon">
+                            <img src="./assets/images/Sakura Delight Menu/Yakisoba .png" width="200" height="80" loading="lazy" alt="icon">
+                          </div>
+              
+                          <p class="label-1 card-text">
+                              <table border="0" align="center">
+                                  <tr>
+                                      <td align="left" ><strong>Yakisoba</strong></td>
+                                      <td align="right"><strong>$11.99</strong></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" align="left"><p class="label-1 card-text">Egg soba noodles, shrimp, chicken, vegetables, sauce
+                                      <br>Allergens: Wheat, Soy, Shellfish</p> </td>
+                                    </tr>
+                              </table>
+                              
+                          </p>
+              
+                        </div>
+                      </li>
+                      <!--END OF FOOD 5-->
+        
+                      <!--FOOD 6-->
+                      <li class="feature-item">
+                        <div class="feature-card">
+              
+                          <div class="card-icon">
+                            <img src="./assets/images/Sakura Delight Menu/Sashimi Deluxe.png" width="200" height="80" loading="lazy" alt="icon">
+                          </div>
+              
+              
+                          <p class="label-1 card-text">
+                              <table border="0" align="center">
+                                  <tr>
+                                  <td align="left" ><strong>Sashimi Deluxe</strong></td>
+                                  <td align="right"><strong>$18.99</strong></td>
+                                  </tr>
+                                  <tr>
+                                  <td colspan="2" align="left"><p class="label-1 card-text"> Fresh tuna, whitefish, salmon, squid, octopus, crabstick
+                                    <br>Allergens: Fish, Shellfish</p> </td>
+                                  </tr>
+                               </table></p>
+              
+                        </div>
+                      </li>
+                      <!--END OF FOOD 6-->
+        
+                      <!--FOOD 7-->
+                      <li class="feature-item">
+                        <div class="feature-card">
+              
+                          <div class="card-icon">
+                            <img src="./assets/images/Sakura Delight Menu/Beef Sukiyaki.png" width="200" height="80" loading="lazy" alt="icon">
+                          </div>
+              
+                          <p class="label-1 card-text">
+                            <table border="0" align="center">
+                                <tr>
+                                <td align="left" ><strong>Beef Sukiyaki</strong></td>
+                                <td align="right"><strong>$15.99</strong></td>
+                                </tr>
+                                <tr>
+                                <td colspan="2" align="left"><p class="label-1 card-text"> Thinly sliced beef, vegetables, sweet soy broth
+                                  <br>Allergens: Soy</p> </td>
+                                </tr>
+                             </table></p>
+                        </div>
+                      </li>
+                      <!--END OF FOOD 7-->
+        
+                      <!--FOOD 8-->
+                      <li class="feature-item">
+                        <div class="feature-card">
+              
+                          <div class="card-icon">
+                            <img src="./assets/images/Sakura Delight Menu/Smoked Duck Udon.png" width="200" height="80" loading="lazy" alt="icon">
+                          </div>
+              
+                          <p class="label-1 card-text">
+                            <table border="0" align="center">
+                                <tr>
+                                <td align="left" ><strong>Smoked Duck Udon<strong></td>
+                                <td align="right"><strong>$14.99</strong></td>
+                                </tr>
+                                <tr>
+                                <td colspan="2" align="left"><p class="label-1 card-text">Smoked duck, udon noodles, broth
+                                  <br>Allergens: Soy</p> </td>
+                                </tr>
+                             </table></p>
+              
+                        </div>
+                      </li>
+                      <!--END OF FOOD 8-->  
+      
+                      <!--FOOD 9-->
+                      <li class="feature-item">
+                        <div class="feature-card">
+              
+                          <div class="card-icon">
+                            <img src="./assets/images/Sakura Delight Menu/Katsu Curry.png" width="200" height="80" loading="lazy" alt="icon">
+                          </div>
+              
+                          <p class="label-1 card-text">
+                              <table border="0" align="center">
+                                  <tr>
+                                      <td align="left" ><strong>Katsu Curry</strong></td>
+                                      <td align="right"><strong>$11.99</strong></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" align="left"><p class="label-1 card-text">Breaded cutlet (pork or chicken), Japanese curry, rice
+                                      <br>Allergens: Wheat, Soy</p> </td>
+                                    </tr>
+                              </table>
+                              
+                          </p>
+              
+                        </div>
+                      </li>
+                      <!--END OF FOOD 9-->
+        
+                      <!--FOOD 10-->
+                      <li class="feature-item">
+                        <div class="feature-card">
+              
+                          <div class="card-icon">
+                            <img src="./assets/images/Sakura Delight Menu/Salmon and Avocado Temaki.png" width="200" height="80" loading="lazy" alt="icon">
+                          </div>
+              
+                          <p class="label-1 card-text">
+                            <table border="0" align="center">
+                                <tr>
+                                <td align="left" ><strong>Salmon & Avocado Temaki<strong></td>
+                                <td align="right"><strong>$6.99</strong></td>
+                                </tr>
+                                <tr>
+                                <td colspan="2" align="left"><p class="label-1 card-text">Fresh salmon, creamy avocado, rice, and nori (seaweed) sushi roll
+
+
+
+
+
+                                  <br>Allergens: Fish, Seaweed</p> </td>
+                                </tr>
+                             </table></p>
+              
+                        </div>                  
+                      </li>
+                      <!--END OF FOOD 10-->
+        
+                      <!--FOOD 11-->
+                      <li class="feature-item">
+                        <div class="feature-card">
+              
+                          <div class="card-icon">
+                            <img src="./assets/images/Sakura Delight Menu/Miso Soup.png" width="200" height="80" loading="lazy" alt="icon">
+                          </div>
+              
+                          <p class="label-1 card-text">
+                            <table border="0" align="center">
+                                <tr>
+                                <td align="left" ><strong>Miso Soup</strong></td>
+                                <td align="right"><strong>$2.99</strong></td>
+                                </tr>
+                                <tr>
+                                <td colspan="2" align="left"><p class="label-1 card-text"> Soybean paste, tofu, seaweed, green onions
+                                  <br>Allergens: Soy</p> </td>
+                                </tr>
+                             </table></p>
+                        </div>
+                      </li>
+                      <!--END OF FOOD 11-->
+        
+                      <!--FOOD 12-->
+                      <li class="feature-item">
+                        <div class="feature-card">
+              
+                          <div class="card-icon">
+                            <img src="./assets/images/Sakura Delight Menu/Chawanmushi.png" width="200" height="80" loading="lazy" alt="icon">
+                          </div>
+              
+              
+                          <p class="label-1 card-text">
+                              <table border="0" align="center">
+                                  <tr>
+                                  <td align="left" ><strong>Chawanmushi</strong></td>
+                                  <td align="right"><strong>$5.99</strong></td>
+                                  </tr>
+                                  <tr>
+                                  <td colspan="2" align="left"><p class="label-1 card-text"> Savory egg custard, various meats, vegetables
+                                    <br>Allergens: Eggs</p> </td>
+                                  </tr>
+                               </table></p>
+              
+                        </div>
+                      </li>
+                      <!--END OF FOOD 12-->                                
+                </ul>
+            <!--END OF Main Course-->
+      
+            <!--Dessert-->
+                <h2>Desserts</h2>
+                <br>
+                <ul class="grid-list">
+                
+                        <!--FOOD 13-->
+                        <li class="feature-item">
+                          <div class="feature-card">
+                
+                            <div class="card-icon">
+                              <img src="./assets/images/Sakura Delight Menu/Mochi Ice Cream.png" width="200" height="80" loading="lazy" alt="icon">
+                            </div>
+                
+                            <p class="label-1 card-text">
+                                <table border="0" align="center">
+                                    <tr>
+                                        <td align="left" ><strong>Mochi Ice Cream</strong></td>
+                                        <td align="right"><strong>$16.99</strong></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="2" align="left"><p class="label-1 card-text"> Soft rice cake, ice cream (various flavors)
+                                        <br>Allergens: Milk, Soy</p> </td>
+                                      </tr>
+                                </table>
+                                
+                            </p>
+                
+                          </div>
+                        </li>
+                        <!--END OF FOOD 13-->
+          
+                        <!--FOOD 14-->
+                        <li class="feature-item">
+                          <div class="feature-card">
+                
+                            <div class="card-icon">
+                              <img src="./assets/images/Sakura Delight Menu/Matcha Cheesecake.png" width="200" height="80" loading="lazy" alt="icon">
+                            </div>
+                
+                
+                            <p class="label-1 card-text">
+                                <table border="0" align="center">
+                                    <tr>
+                                    <td align="left" ><strong>Matcha Cheesecake</strong></td>
+                                    <td align="right"><strong>$6.99</strong></td>
+                                    </tr>
+                                    <tr>
+                                    <td colspan="2" align="left"><p class="label-1 card-text">Cheesecake, matcha, green tea crust
+                                      <br>Allergens: Milk, Wheat</p> </td>
+                                    </tr>
+                                 </table></p>
+                
+                          </div>
+                        </li>
+                        <!--END OF FOOD 14-->
+      
+                        <!--FOOD 15-->
+                        <li class="feature-item">
+                          <div class="feature-card">
+                
+                            <div class="card-icon">
+                              <img src="./assets/images/Sakura Delight Menu/Dorayaki .png" width="200" height="80" loading="lazy" alt="icon">
+                            </div>
+                
+                            <p class="label-1 card-text">
+                                <table border="0" align="center">
+                                    <tr>
+                                        <td align="left" ><strong>Dorayaki</strong></td>
+                                        <td align="right"><strong>$3.99</strong></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="2" align="left"><p class="label-1 card-text">Pancake, sweet red bean paste filling
+                                        <br>Allergens: Wheat</p> </td>
+                                      </tr>
+                                </table>
+                                
+                            </p>
+                
+                          </div>
+                        </li>
+                        <!--END OF FOOD 15-->
+          
+                        <!--FOOD 16-->
+                        <li class="feature-item">
+                          <div class="feature-card">
+                
+                            <div class="card-icon">
+                              <img src="./assets/images/Sakura Delight Menu/Taiyaki Parfait.png" width="200" height="80" loading="lazy" alt="icon">
+                            </div>
+                
+                
+                            <p class="label-1 card-text">
+                                <table border="0" align="center">
+                                    <tr>
+                                    <td align="left" ><strong>Taiyaki</strong></td>
+                                    <td align="right"><strong>$4.99</strong></td>
+                                    </tr>
+                                    <tr>
+                                    <td colspan="2" align="left"><p class="label-1 card-text">Pancake batter, sweet red bean or custard filling
+                                      <br>Allergens: Wheat</p> </td>
+                                    </tr>
+                                 </table></p>
+                
+                          </div>
+                        </li>
+                        <!--END OF FOOD 16-->
+      
+          
+                </ul>
+            <!--END OF Dessert-->
+      
+          </div>
+        </div>
+
+        <div class="menu-list " id="dinner-menu">
+          <!-- Lunch menu content here -->   
+            <!--Appertizers-->
+                <h2><span style="color: #ef7993;">Appertizers</span> </h2>
+                <br>
+                <ul class="grid-list">
+            
+                    <!--FOOD 1-->
+                    <li class="feature-item">
+                      <div class="feature-card">
+            
+                        <div class="card-icon">
+                          <img src="./assets/images/Sakura Delight Menu/Edamame.png" width="200" height="80" loading="lazy" alt="icon">
+                        </div>
+            
+                        <p class="label-1 card-text">
+                            <table border="0" align="center">
+                                <tr>
+                                    <td align="left" ><strong>Edamame</strong></td>
+                                    <td align="right"><strong>$4.99</strong></td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2" align="left"><p class="label-1 card-text">Steamed young soybeans, salt
+                                    <br>Allergens: Soy</p> </td>
+                                  </tr>
+                            </table>
+                            
+                        </p>
+            
+                      </div>
+                    </li>
+                    <!--END OF FOOD 1-->
+      
+                    <!--FOOD 2-->
+                    <li class="feature-item">
+                      <div class="feature-card">
+            
+                        <div class="card-icon">
+                          <img src="./assets/images/Sakura Delight Menu/Gyoza.png" width="200" height="80" loading="lazy" alt="icon">
+                        </div>
+            
+            
+                        <p class="label-1 card-text">
+                            <table border="0" align="center">
+                                <tr>
+                                <td align="left" ><strong>Gyoza</strong></td>
+                                <td align="right"><strong>$6.99</strong></td>
+                                </tr>
+                                <tr>
+                                <td colspan="2" align="left"><p class="label-1 card-text">Dumplings (pork, chicken, or vegetables), wrapper, seasoning
+                                  <br>Allergens: Wheat, Soy</p> </td>
+                                </tr>
+                             </table></p>
+            
+                      </div>
+                    </li>
+                    <!--END OF FOOD 2-->
+      
+                    <!--FOOD 3-->
+                    <li class="feature-item">
+                      <div class="feature-card">
+            
+                        <div class="card-icon">
+                          <img src="./assets/images/Sakura Delight Menu/Harumaki.png" width="200" height="80" loading="lazy" alt="icon">
+                        </div>
+            
+                        <p class="label-1 card-text">
+                          <table border="0" align="center">
+                              <tr>
+                              <td align="left" ><strong>Harumaki</strong></td>
+                              <td align="right"><strong>$5.99</strong></td>
+                              </tr>
+                              <tr>
+                              <td colspan="2" align="left"><p class="label-1 card-text">Fresh vegetables, tempura batter, sweet chili dipping sauce
+                                <br>Allergens: Wheat</p> </td>
+                              </tr>
+                           </table></p>
+            
+                      </div>
+                    </li>
+                    <!--END OF FOOD 3-->
+      
+                    <!--FOOD 4-->
+                    <li class="feature-item">
+                      <div class="feature-card">
+            
+                        <div class="card-icon">
+                          <img src="./assets/images/Sakura Delight Menu/Tempura Combo.png" width="200" height="80" loading="lazy" alt="icon">
+                        </div>
+            
+                        <p class="label-1 card-text">
+                          <table border="0" align="center">
+                              <tr>
+                              <td align="left" ><strong>Tempura Combo</strong></td>
+                              <td align="right"><strong>$8.99</strong></td>
+                              </tr>
+                              <tr>
+                              <td colspan="2" align="left"><p class="label-1 card-text"> Battered vegetables (e.g., sweet potato, zucchini, eggplant), prawns, tempura sauce
+                                <br>Allergens: Wheat, Shellfish</p> </td>
+                              </tr>
+                           </table></p>
+                      </div>
+                    </li>
+                    <!--END OF FOOD 4-->
+      
+                </ul>
+            <!--END OF Appertizers-->
+
+            <!--Main Course-->
+                <h2><span style="color: #ef7993;">Main Course</span></h2>
+                <br>
+                <ul class="grid-list">
+              
+                      <!--FOOD 1-->
+                      <li class="feature-item">
+                        <div class="feature-card">
+              
+                          <div class="card-icon">
+                            <img src="./assets/images/Sakura Delight Menu/Sushi Platter .png" width="200" height="80" loading="lazy" alt="icon">
+                          </div>
+              
+                          <p class="label-1 card-text">
+                              <table border="0" align="center">
+                                  <tr>
+                                      <td align="left" ><strong>Sushi Platter</strong></td>
+                                      <td align="right"><strong>$16.99</strong></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" align="left"><p class="label-1 card-text">Assorted fish and seafood, rice, wasabi, pickled ginger
+                                      <br>Allergens: Fish, Soy</p> </td>
+                                    </tr>
+                              </table>
+                              
+                          </p>
+              
+                        </div>
+                      </li>
+                      <!--END OF FOOD 1-->
+        
+                      <!--FOOD 2-->
+                      <li class="feature-item">
+                        <div class="feature-card">
+              
+                          <div class="card-icon">
+                            <img src="./assets/images/Sakura Delight Menu/Sushi SandwichDeluxe.png" width="200" height="80" loading="lazy" alt="icon">
+                          </div>
+              
+              
+                          <p class="label-1 card-text">
+                              <table border="0" align="center">
+                                  <tr>
+                                  <td align="left" ><strong>Sushi Sandwich</strong></td>
+                                  <td align="right"><strong>$12.99</strong></td>
+                                  </tr>
+                                  <tr>
+                                  <td colspan="2" align="left"><p class="label-1 card-text">Minced tuna, salmon, tempura, spicy mayo, tobiko, rice, nori
+                                    <br>Allergens: Fish, Wheat, Soy</p> </td>
+                                  </tr>
+                               </table></p>
+              
+                        </div>
+                      </li>
+                      <!--END OF FOOD 2-->
+        
+                      <!--FOOD 3-->
+                      <li class="feature-item">
+                        <div class="feature-card">
+              
+                          <div class="card-icon">
+                            <img src="./assets/images/Sakura Delight Menu/Takoyaki.png" width="200" height="80" loading="lazy" alt="icon">
+                          </div>
+              
+                          <p class="label-1 card-text">
+                            <table border="0" align="center">
+                                <tr>
+                                <td align="left" ><strong>Takoyaki</strong></td>
+                                <td align="right"><strong>$7.99</strong></td>
+                                </tr>
+                                <tr>
+                                <td colspan="2" align="left"><p class="label-1 card-text"> Octopus, batter, bonito flakes, takoyaki sauce
+                                  <br>Allergens: Wheat, Soy, Fish</p> </td>
+                                </tr>
+                             </table></p>
+                        </div>
+                      </li>
+                      <!--END OF FOOD 3-->
+        
+                      <!--FOOD 4-->
+                      <li class="feature-item">
+                        <div class="feature-card">
+              
+                          <div class="card-icon">
+                            <img src="./assets/images/Sakura Delight Menu/Classic Bento - Teriyaki Chicken.png" width="200" height="80" loading="lazy" alt="icon">
+                          </div>
+              
+                          <p class="label-1 card-text">
+                            <table border="0" align="center">
+                                <tr>
+                                <td align="left" ><strong>Teriyaki Chicken Bento</strong></td>
+                                <td align="right"><strong>$10.99</strong></td>
+                                </tr>
+                                <tr>
+                                <td colspan="2" align="left"><p class="label-1 card-text">Grilled chicken, teriyaki sauce, rice, vegetables
+                                  <br>Allergens: Soy</p> </td>
+                                </tr>
+                             </table></p>
+              
+                        </div>
+                      </li>
+                      <!--END OF FOOD 4-->                
+      
+                      <!--FOOD 5-->
+                      <li class="feature-item">
+                        <div class="feature-card">
+              
+                          <div class="card-icon">
+                            <img src="./assets/images/Sakura Delight Menu/Yakisoba .png" width="200" height="80" loading="lazy" alt="icon">
+                          </div>
+              
+                          <p class="label-1 card-text">
+                              <table border="0" align="center">
+                                  <tr>
+                                      <td align="left" ><strong>Yakisoba</strong></td>
+                                      <td align="right"><strong>$11.99</strong></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" align="left"><p class="label-1 card-text">Egg soba noodles, shrimp, chicken, vegetables, sauce
+                                      <br>Allergens: Wheat, Soy, Shellfish</p> </td>
+                                    </tr>
+                              </table>
+                              
+                          </p>
+              
+                        </div>
+                      </li>
+                      <!--END OF FOOD 5-->
+        
+                      <!--FOOD 6-->
+                      <li class="feature-item">
+                        <div class="feature-card">
+              
+                          <div class="card-icon">
+                            <img src="./assets/images/Sakura Delight Menu/Sashimi Deluxe.png" width="200" height="80" loading="lazy" alt="icon">
+                          </div>
+              
+              
+                          <p class="label-1 card-text">
+                              <table border="0" align="center">
+                                  <tr>
+                                  <td align="left" ><strong>Sashimi Deluxe</strong></td>
+                                  <td align="right"><strong>$18.99</strong></td>
+                                  </tr>
+                                  <tr>
+                                  <td colspan="2" align="left"><p class="label-1 card-text"> Fresh tuna, whitefish, salmon, squid, octopus, crabstick
+                                    <br>Allergens: Fish, Shellfish</p> </td>
+                                  </tr>
+                               </table></p>
+              
+                        </div>
+                      </li>
+                      <!--END OF FOOD 6-->
+        
+                      <!--FOOD 7-->
+                      <li class="feature-item">
+                        <div class="feature-card">
+              
+                          <div class="card-icon">
+                            <img src="./assets/images/Sakura Delight Menu/Beef Sukiyaki.png" width="200" height="80" loading="lazy" alt="icon">
+                          </div>
+              
+                          <p class="label-1 card-text">
+                            <table border="0" align="center">
+                                <tr>
+                                <td align="left" ><strong>Beef Sukiyaki</strong></td>
+                                <td align="right"><strong>$15.99</strong></td>
+                                </tr>
+                                <tr>
+                                <td colspan="2" align="left"><p class="label-1 card-text"> Thinly sliced beef, vegetables, sweet soy broth
+                                  <br>Allergens: Soy</p> </td>
+                                </tr>
+                             </table></p>
+                        </div>
+                      </li>
+                      <!--END OF FOOD 7-->
+        
+                      <!--FOOD 8-->
+                      <li class="feature-item">
+                        <div class="feature-card">
+              
+                          <div class="card-icon">
+                            <img src="./assets/images/Sakura Delight Menu/Smoked Duck Udon.png" width="200" height="80" loading="lazy" alt="icon">
+                          </div>
+              
+                          <p class="label-1 card-text">
+                            <table border="0" align="center">
+                                <tr>
+                                <td align="left" ><strong>Smoked Duck Udon<strong></td>
+                                <td align="right"><strong>$14.99</strong></td>
+                                </tr>
+                                <tr>
+                                <td colspan="2" align="left"><p class="label-1 card-text">Smoked duck, udon noodles, broth
+                                  <br>Allergens: Soy</p> </td>
+                                </tr>
+                             </table></p>
+              
+                        </div>
+                      </li>
+                      <!--END OF FOOD 8-->  
+      
+                      <!--FOOD 9-->
+                      <li class="feature-item">
+                        <div class="feature-card">
+              
+                          <div class="card-icon">
+                            <img src="./assets/images/Sakura Delight Menu/Katsu Curry.png" width="200" height="80" loading="lazy" alt="icon">
+                          </div>
+              
+                          <p class="label-1 card-text">
+                              <table border="0" align="center">
+                                  <tr>
+                                      <td align="left" ><strong>Katsu Curry</strong></td>
+                                      <td align="right"><strong>$11.99</strong></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" align="left"><p class="label-1 card-text">Breaded cutlet (pork or chicken), Japanese curry, rice
+                                      <br>Allergens: Wheat, Soy</p> </td>
+                                    </tr>
+                              </table>
+                              
+                          </p>
+              
+                        </div>
+                      </li>
+                      <!--END OF FOOD 9-->
+        
+                      <!--FOOD 10-->
+                      <li class="feature-item">
+                        <div class="feature-card">
+              
+                          <div class="card-icon">
+                            <img src="./assets/images/Sakura Delight Menu/Salmon and Avocado Temaki.png" width="200" height="80" loading="lazy" alt="icon">
+                          </div>
+              
+                          <p class="label-1 card-text">
+                            <table border="0" align="center">
+                                <tr>
+                                <td align="left" ><strong>Salmon & Avocado Temaki<strong></td>
+                                <td align="right"><strong>$6.99</strong></td>
+                                </tr>
+                                <tr>
+                                <td colspan="2" align="left"><p class="label-1 card-text">Fresh salmon, creamy avocado, rice, and nori (seaweed) sushi roll
+
+
+
+
+
+                                  <br>Allergens: Fish, Seaweed</p> </td>
+                                </tr>
+                             </table></p>
+              
+                        </div>                  
+                      </li>
+                      <!--END OF FOOD 10-->
+        
+                      <!--FOOD 11-->
+                      <li class="feature-item">
+                        <div class="feature-card">
+              
+                          <div class="card-icon">
+                            <img src="./assets/images/Sakura Delight Menu/Miso Soup.png" width="200" height="80" loading="lazy" alt="icon">
+                          </div>
+              
+                          <p class="label-1 card-text">
+                            <table border="0" align="center">
+                                <tr>
+                                <td align="left" ><strong>Miso Soup</strong></td>
+                                <td align="right"><strong>$2.99</strong></td>
+                                </tr>
+                                <tr>
+                                <td colspan="2" align="left"><p class="label-1 card-text"> Soybean paste, tofu, seaweed, green onions
+                                  <br>Allergens: Soy</p> </td>
+                                </tr>
+                             </table></p>
+                        </div>
+                      </li>
+                      <!--END OF FOOD 11-->
+        
+                      <!--FOOD 12-->
+                      <li class="feature-item">
+                        <div class="feature-card">
+              
+                          <div class="card-icon">
+                            <img src="./assets/images/Sakura Delight Menu/Chawanmushi.png" width="200" height="80" loading="lazy" alt="icon">
+                          </div>
+              
+              
+                          <p class="label-1 card-text">
+                              <table border="0" align="center">
+                                  <tr>
+                                  <td align="left" ><strong>Chawanmushi</strong></td>
+                                  <td align="right"><strong>$5.99</strong></td>
+                                  </tr>
+                                  <tr>
+                                  <td colspan="2" align="left"><p class="label-1 card-text"> Savory egg custard, various meats, vegetables
+                                    <br>Allergens: Eggs</p> </td>
+                                  </tr>
+                               </table></p>
+              
+                        </div>
+                      </li>
+                      <!--END OF FOOD 12-->                                
+                </ul>
+            <!--END OF Main Course-->
+      
+            <!--Dessert-->
+                <h2><span style="color: #ef7993;">Desserts</span></h2>
+                <br>
+                <ul class="grid-list">
+                
+                        <!--FOOD 13-->
+                        <li class="feature-item">
+                          <div class="feature-card">
+                
+                            <div class="card-icon">
+                              <img src="./assets/images/Sakura Delight Menu/Mochi Ice Cream.png" width="200" height="80" loading="lazy" alt="icon">
+                            </div>
+                
+                            <p class="label-1 card-text">
+                                <table border="0" align="center">
+                                    <tr>
+                                        <td align="left" ><strong>Mochi Ice Cream</strong></td>
+                                        <td align="right"><strong>$16.99</strong></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="2" align="left"><p class="label-1 card-text"> Soft rice cake, ice cream (various flavors)
+                                        <br>Allergens: Milk, Soy</p> </td>
+                                      </tr>
+                                </table>
+                                
+                            </p>
+                
+                          </div>
+                        </li>
+                        <!--END OF FOOD 13-->
+          
+                        <!--FOOD 14-->
+                        <li class="feature-item">
+                          <div class="feature-card">
+                
+                            <div class="card-icon">
+                              <img src="./assets/images/Sakura Delight Menu/Matcha Cheesecake.png" width="200" height="80" loading="lazy" alt="icon">
+                            </div>
+                
+                
+                            <p class="label-1 card-text">
+                                <table border="0" align="center">
+                                    <tr>
+                                    <td align="left" ><strong>Matcha Cheesecake</strong></td>
+                                    <td align="right"><strong>$6.99</strong></td>
+                                    </tr>
+                                    <tr>
+                                    <td colspan="2" align="left"><p class="label-1 card-text">Cheesecake, matcha, green tea crust
+                                      <br>Allergens: Milk, Wheat</p> </td>
+                                    </tr>
+                                 </table></p>
+                
+                          </div>
+                        </li>
+                        <!--END OF FOOD 14-->
+      
+                        <!--FOOD 15-->
+                        <li class="feature-item">
+                          <div class="feature-card">
+                
+                            <div class="card-icon">
+                              <img src="./assets/images/Sakura Delight Menu/Dorayaki .png" width="200" height="80" loading="lazy" alt="icon">
+                            </div>
+                
+                            <p class="label-1 card-text">
+                                <table border="0" align="center">
+                                    <tr>
+                                        <td align="left" ><strong>Dorayaki</strong></td>
+                                        <td align="right"><strong>$3.99</strong></td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="2" align="left"><p class="label-1 card-text">Pancake, sweet red bean paste filling
+                                        <br>Allergens: Wheat</p> </td>
+                                      </tr>
+                                </table>
+                                
+                            </p>
+                
+                          </div>
+                        </li>
+                        <!--END OF FOOD 15-->
+          
+                        <!--FOOD 16-->
+                        <li class="feature-item">
+                          <div class="feature-card">
+                
+                            <div class="card-icon">
+                              <img src="./assets/images/Sakura Delight Menu/Taiyaki Parfait.png" width="200" height="80" loading="lazy" alt="icon">
+                            </div>
+                
+                
+                            <p class="label-1 card-text">
+                                <table border="0" align="center">
+                                    <tr>
+                                    <td align="left" ><strong>Taiyaki</strong></td>
+                                    <td align="right"><strong>$4.99</strong></td>
+                                    </tr>
+                                    <tr>
+                                    <td colspan="2" align="left"><p class="label-1 card-text">Pancake batter, sweet red bean or custard filling
+                                      <br>Allergens: Wheat</p> </td>
+                                    </tr>
+                                 </table></p>
+                
+                          </div>
+                        </li>
+                        <!--END OF FOOD 16-->
+      
+          
+                </ul>
+            <!--END OF Dessert-->
+      
+          </div>
+        </div>
+
+
+
+        <div class="menu-list" id="drinks-menu">
+        <!-- Drink menu content here -->
+        <h2>Alcoholic Drinks</h2>
+        <br>
+          <ul class="grid-list">
+            <!-- Tokujo Taimei -->
+            <li class="feature-item">
+              <div class="feature-card">
+                  <div class="card-icon">
+                      <img src="./assets/images/Sakura Delight Menu/Tokujo Taimei.png" width="200" height="80" loading="lazy" alt="Tokujo Taimei">
+                  </div>
+                  <p class="label-1 card-text">
+                      <table border="0" align="center">
+                          <tr>
+                              <td align="left"><strong>Tokujo Taimei</strong></td>
+                              <td align="right"><strong>$8.99</strong></td>
+                          </tr>
+                          <tr>
+                              <td colspan="2" align="left">
+                                  <p class="label-1 card-text">Barley shochu, water
+                                      <br>Allergens: None</p>
+                              </td>
+                          </tr>
+                      </table>
+                  </p>
+              </div>
+            </li>
+
+            <!-- Dragon Cocktail -->
+            <li class="feature-item">
+              <div class="feature-card">
+                  <div class="card-icon">
+                      <img src="./assets/images/Sakura Delight Menu/Dragon Cocktail.png" width="200" height="80" loading="lazy" alt="Dragon Cocktail">
+                  </div>
+                  <p class="label-1 card-text">
+                      <table border="0" align="center">
+                          <tr>
+                              <td align="left"><strong>Dragon Cocktail</strong></td>
+                              <td align="right"><strong>$10.99</strong></td>
+                          </tr>
+                          <tr>
+                              <td colspan="2" align="left">
+                                  <p class="label-1 card-text">Mukai Shuzo sake, various ingredients for cocktail
+                                      <br>Allergens: None</p>
+                              </td>
+                          </tr>
+                      </table>
+                  </p>
+              </div>
+            </li>
+
+            <!-- Japanese Beer -->
+            <li class="feature-item">
+              <div class="feature-card">
+                  <div class="card-icon">
+                      <img src="./assets/images/Sakura Delight Menu/Japanese Beer.png" width="200" height="80" loading="lazy" alt="Japanese Beer">
+                  </div>
+                  <p class="label-1 card-text">
+                      <table border="0" align="center">
+                          <tr>
+                              <td align="left"><strong>Japanese Beer</strong></td>
+                              <td align="right"><strong>$5.99 (varies by brand)</strong></td>
+                          </tr>
+                          <tr>
+                              <td colspan="2" align="left">
+                                  <p class="label-1 card-text">Various Japanese beer brands
+                                      <br>Allergens: None</p>
+                              </td>
+                          </tr>
+                      </table>
+                  </p>
+              </div>
+            </li>
+          </ul>
+
+          <br>
+          <h2>Non-alcoholic Drinks</h2>
+          <br>
+          <ul class="grid-list">
+          <!-- Ocha -->
+            <li class="feature-item">
+              <div class="feature-card">
+                  <div class="card-icon">
+                      <img src="./assets/images/Sakura Delight Menu/Ocha.png" width="200" height="80" loading="lazy" alt="Ocha">
+                  </div>
+                  <p class="label-1 card-text">
+                      <table border="0" align="center">
+                          <tr>
+                              <td align="left"><strong>Ocha</strong></td>
+                              <td align="right"><strong>$1.99</strong></td>
+                          </tr>
+                          <tr>
+                              <td colspan="2" align="left">
+                                  <p class="label-1 card-text">Unsweetened Japanese Green Tea
+                                      <br>Allergens: None</p>
+                              </td>
+                          </tr>
+                      </table>
+                  </p>
+              </div>
+            </li>
+
+            <!-- Green Tea Latte -->
+            <li class="feature-item">
+              <div class="feature-card">
+                  <div class="card-icon">
+                      <img src="./assets/images/Sakura Delight Menu/Green Tea Latte.png" width="200" height="80" loading="lazy" alt="Green Tea Latte">
+                  </div>
+                  <p class="label-1 card-text">
+                      <table border="0" align="center">
+                          <tr>
+                              <td align="left"><strong>Green Tea Latte</strong></td>
+                              <td align="right"><strong>$3.99</strong></td>
+                          </tr>
+                          <tr>
+                              <td colspan="2" align="left">
+                                  <p class="label-1 card-text">Green tea, steamed milk
+                                      <br>Allergens: Milk</p>
+                              </td>
+                          </tr>
+                      </table>
+                  </p>
+              </div>
+            </li>
+          </ul>
+          
+          </div>
+        </div>
+
+
+
+          <img src="./assets/images/shape-9.png" width="208" height="178" loading="lazy" alt="shape"
+            class="shape shape-1">
+    
+          <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape"
+            class="shape shape-2">
+    
+        </div>
+      </section>
+        </div>
+    </section>
+    <!--- END OF #FEATURES--->
+
+  <!--- #TESTIMONIALS--->
+
+  <section class="section testi text-center has-bg-image"
+    style="background-image: url('./assets/images/Sakura Delight Menu/chef\ kitchen.png')" aria-label="testimonials">
+    <div class="container">
+
+      <div class="quote">”</div>
+
+      <p class="headline-2 testi-text">
+        <div class="review-carousel">
+          <div class="review-slide">
+            <p class="title-1 testi-text"><span style="color: #ef7993;">PERFECTLY BALANCED FLAVORS</span> <br><br> "Our culinary team works diligently to ensure that every bite is a harmonious blend of flavors and textures."</p>
+            <br>
+            <p class="title-1 testi-text"><span style="color: #ef7993;">- Chef Hiroshi</span></p>
+          </div>
+          <div class="review-slide">
+            <p class="title-1 testi-text"><span style="color: #ef7993;">JAPANESE HOSPITALITY</span> <br><br> "At Sakura Delight, we embrace the Japanese concept of 'omotenashi,' ensuring that your visit is warm, welcoming, and unforgettable.</p>
+            <br>
+            <p class="title-1 testi-text"><span style="color: #ef7993;">- Chef Noboru</span></p>
+          </div>
+          <div class="review-slide">
+            <p class="title-1 testi-text"><span style="color: #ef7993;">FROM OUR KITCHEN TO YOUR TABLE</span> <br><br> "We take pride in bringing the essence of Japanese cuisine to your table, showcasing the rich heritage of our culinary traditions.</p>
+            <br>
+            <p class="title-1 testi-text"><span style="color: #ef7993;">- Chef Yuki</span></p>
+          </div>
+        </div>
+              </p>
+
+      <div class="wrapper">
+        <div class="separator"></div>
+        <div class="separator"></div>
+        <div class="separator"></div>
+      </div>
+
+    </div>
+  </section>
+  
+    <!---END OF #TESTIMONIALS--->
+
+
+<!--- #FOOTER--->
+<footer class="footer section has-bg-image text-center"
+style="background-image: url('./assets/images/footer-bg.png')">
+<div class="container">
+
+  <div class="footer-top grid-list">
+
+    <div class="footer-brand has-before has-after">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.png" width="300" height="50" loading="lazy" alt="sakura delights home">
+      </a>
+
+      <address class="body-4">
+        190 Middle Road Fortune Centre #03-01 Level 3, Singapore
+      </address>
+
+      <a href="mailto:booking@sakuradelights.com" class="body-4 contact-link">booking@sakuradelights.com</a>
+
+      <a href="tel:+65 1234-5678" class="body-4 contact-link">Booking Request : +65 1234-56788</a>
+
+      <p class="body-4">
+        Open : Daily 11:00 am - 10:00 pm
+      </p>
+
+      <div class="wrapper">
+        <div class="separator"></div>
+        <div class="separator"></div>
+        <div class="separator"></div>
+      </div>
+
+      <p class="title-1">Get News & Offers</p>
+
+      <p class="label-1">
+        Subscribe us & Get <span class="span">25% Off.</span>
+      </p>
+
+      <form action="" class="input-wrapper">
+        <div class="icon-wrapper">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+          <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
+        </div>
+
+        <button type="submit" class="btn btn-secondary">
+          <span class="text text-1">SUBSCRIBE</span>
+
+          <span class="text text-2" aria-hidden="true">SUBSCRIBE</span>
+        </button>
+      </form>
+
     </div>
 
-    <script>
-        function showMenu(menuType) {
-            const menus = document.querySelectorAll('.menu-list');
-            menus.forEach(menu => menu.classList.remove('active'));
+    <ul class="footer-list">
 
-            const menuToShow = document.getElementById(menuType + '-menu');
-            menuToShow.classList.add('active');
-        }
-    </script>
-    </div>
+      <li>
+        <a href="#" class="label-2 footer-link hover-underline">HOME</a>
+      </li>
+
+      <li>
+        <a href="menu.html" class="label-2 footer-link hover-underline">MENUS</a>
+      </li>
+
+      <li>
+        <a href="reservation.html" class="label-2 footer-link hover-underline">RESERVATION</a>
+      </li>
+
+      <li>
+        <a href="#about" class="label-2 footer-link hover-underline">ABOUT US</a>
+      </li>
+
+      <li>
+        <a href="#" class="label-2 footer-link hover-underline">OUR CHEFS</a>
+      </li>
+
+    </ul>
+
+    <ul class="footer-list">
+
+      <li>
+        <a href="#" class="label-2 footer-link hover-underline">FACEBOOK</a>
+      </li>
+
+      <li>
+        <a href="#" class="label-2 footer-link hover-underline">INSTAGRAM</a>
+      </li>
+
+      <li>
+        <a href="#" class="label-2 footer-link hover-underline">TWITTER</a>
+      </li>
+
+      <li>
+        <a href="#" class="label-2 footer-link hover-underline">YOUTUBE</a>
+      </li>
+
+      <li>
+        <a href="#" class="label-2 footer-link hover-underline">GOOGLE MAP</a>
+      </li>
+
+    </ul>
+
+  </div>
+
+  <div class="footer-bottom">
+
+    <p class="copyright">
+      &copy; 2023 Sakura Delights. All Rights Reserved | Crafted by <a href="https://github.com/hengyinqi626514/sakuradelights"
+        target="_blank" class="link">Heng Yin Qi & Tea Mi Wen</a>
+    </p>
+
+  </div>
+
+</div>
+</footer>
+<!--- END OF #FOOTER--->
+
+
+    
+    <script src="scripts.js"></script>
 </body>
 </html>
