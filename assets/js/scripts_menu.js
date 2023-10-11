@@ -1,21 +1,29 @@
 // interchange of lunch and dinner menu
 function showMenu(menuType) {
-    // Get all elements with class 'menu-list'
-    const menus = document.querySelectorAll('.menu-list');
-    
-    // Remove the 'active' class from all menu lists
-    menus.forEach(menu => menu.classList.remove('active'));
-    
-    // Select the menu to show based on 'menuType'
-    const menuToShow = document.getElementById(menuType + '-menu');
-    
-    // Add the 'active' class to the selected menu to display it
-    menuToShow.classList.add('active'); 
+  // Get all elements with class 'menu-list'
+  const menus = document.querySelectorAll('.menu-list');
 
-    
+  // Remove the 'active' class from all menu lists
+  menus.forEach(menu => menu.classList.remove('active'));
+
+  // Select the menu to show based on 'menuType'
+  const menuToShow = document.getElementById(menuType + '-menu');
+
+  // Add the 'active' class to the selected menu to display it
+  menuToShow.classList.add('active');
+
+  // Get all buttons and reset them to secondary
+  const buttons = document.querySelectorAll('.btn');
+  buttons.forEach((btn) => {
+    btn.classList.remove('btn-primary');
+    btn.classList.add('btn-secondary');
+  });
+
+  // Set the clicked button to primary
+  const activeButton = document.querySelector(`.btn[onclick="showMenu('${menuType}'); return false;"]`);
+  activeButton.classList.remove('btn-secondary');
+  activeButton.classList.add('btn-primary');
 }
-
-
 
 /**
  * HEADER & BACK TOP BTN

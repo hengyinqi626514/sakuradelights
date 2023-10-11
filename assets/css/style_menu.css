@@ -6,7 +6,7 @@
 /* Style the active menu */
 .menu-list.active {
     display: block;
-    border: 1px solid #ccc;
+    border: 1px (--gold-crayola);
     padding: 10px;
 }
 
@@ -1246,10 +1246,10 @@
  .features .section-title { margin-block-end: 40px; }
  
  .feature-card { padding: 30px 20px 40px; 
-  box-shadow: 2px 8px 10px rgba(239, 121, 147, 0.1) ; /* Box shadow properties */
-
+                 box-shadow: 2px 8px 10px rgba(239, 121, 147, 0.1) ; /* Box shadow properties */
   }
  
+
  .feature-item:nth-child(2n+1) .feature-card { background-color: var(--black); }
  
  .feature-item:nth-child(2n) .feature-card { background-color: var(--black); }
@@ -1259,9 +1259,7 @@
    margin-inline: auto;
    transition: var(--transition-2);
  }
- 
- .feature-card:hover .card-icon { transform: scale(-1) rotate(180deg); }
- 
+  
  .feature-card .card-title { margin-block: 20px; }
  
  .feature-card .card-text {
@@ -2292,6 +2290,7 @@
   justify-content: center;
   align-items: center;
 }
+
 
 .menu-list.active {
   border: 2px solid #EF7993; /* Change border color to EF7993 */
